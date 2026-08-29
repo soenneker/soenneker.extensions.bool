@@ -3,10 +3,25 @@
 [![](https://img.shields.io/nuget/dt/soenneker.extensions.bool.svg?style=for-the-badge)](https://www.nuget.org/packages/soenneker.extensions.bool/)
 
 # ![](https://user-images.githubusercontent.com/4441470/224455560-91ed3ee7-f510-4041-a8d2-3fc093025112.png) Soenneker.Extensions.Bool
-### Various helpful extension methods for boolean
+
+Various helpful extension methods for boolean.
 
 ## Installation
 
-```
+```bash
 dotnet add package Soenneker.Extensions.Bool
 ```
+
+## Quick start
+
+```csharp
+using Soenneker.Extensions.Bool;
+
+bool value = true;
+var result = value.ToYesNo();
+```
+
+## Common operations
+
+- `ToYesNo()` - Returns "Yes" or "No".
+- `ToYesNoLower()` - Returns "yes" or "no".
